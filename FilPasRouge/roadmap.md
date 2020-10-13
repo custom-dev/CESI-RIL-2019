@@ -34,7 +34,7 @@ Maintenant, on va ajouter 4 opérations :
 - Mul
 - Div
  
-Chacune de ces opérations va prendre 2 paramètres, deux nombres flottant et réaliser renvoyer le résultat de la somme, la soustraction, la multiplication et la division
+Chacune de ces opérations va prendre 2 paramètres, deux nombres flottants et renvoyer le résultat de la somme, la soustraction, la multiplication et la division
 
 ```
 > FilPasRouge Add 5 10
