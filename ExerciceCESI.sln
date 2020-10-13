@@ -3,29 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{9B89FAA5-EEC6-4184-BE61-84672B797B4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{9B89FAA5-EEC6-4184-BE61-84672B797B4F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercices", "Exercices", "{8A889E5C-907C-4656-AAE9-7A98DDE197F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice01", "Exercice01\Exercice01.csproj", "{5493B86E-C279-45D4-94F2-8946599EA9E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercice01", "Exercice01\Exercice01.csproj", "{5493B86E-C279-45D4-94F2-8946599EA9E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice02", "Exercice02\Exercice02.csproj", "{1AF433E8-A7E4-485F-80D6-B89AB21CEE78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercice02", "Exercice02\Exercice02.csproj", "{1AF433E8-A7E4-485F-80D6-B89AB21CEE78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice03", "Exercice03\Exercice03.csproj", "{4EFF8D27-9576-4E93-ABCF-2F9FCE997E9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercice03", "Exercice03\Exercice03.csproj", "{4EFF8D27-9576-4E93-ABCF-2F9FCE997E9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice04", "Exercice04\Exercice04.csproj", "{5157D3E2-78AF-438F-904A-D991F97A855A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercice04", "Exercice04\Exercice04.csproj", "{5157D3E2-78AF-438F-904A-D991F97A855A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice05", "Exercice05\Exercice05.csproj", "{00880240-D0D5-40A5-983E-AFF42455A02A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercice05", "Exercice05\Exercice05.csproj", "{00880240-D0D5-40A5-983E-AFF42455A02A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice06", "Exercice06\Exercice06.csproj", "{ED9A16B1-86FC-483A-995B-7490F55DED29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercice06", "Exercice06\Exercice06.csproj", "{ED9A16B1-86FC-483A-995B-7490F55DED29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice07", "Exercice07\Exercice07.csproj", "{6C15F644-4099-4686-A129-B959E671EF2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercice07", "Exercice07\Exercice07.csproj", "{6C15F644-4099-4686-A129-B959E671EF2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilPasRouge", "FilPasRouge\FilPasRouge.csproj", "{5F55AF2D-32A9-46B9-9710-908655AFB462}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilPasRouge", "FilPasRouge\FilPasRouge.csproj", "{5F55AF2D-32A9-46B9-9710-908655AFB462}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lundi", "Lundi", "{DC9C51A5-2E14-422C-9EC5-6D5BC9B5F875}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mardi", "Mardi", "{210111EC-B8EA-410B-83DA-D17D80C4D8BB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EssaiInterface", "EssaiInterface\EssaiInterface.csproj", "{B5CAF641-5B34-49E6-A5D0-2D65EB621212}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{5F55AF2D-32A9-46B9-9710-908655AFB462}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F55AF2D-32A9-46B9-9710-908655AFB462}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F55AF2D-32A9-46B9-9710-908655AFB462}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5CAF641-5B34-49E6-A5D0-2D65EB621212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5CAF641-5B34-49E6-A5D0-2D65EB621212}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5CAF641-5B34-49E6-A5D0-2D65EB621212}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5CAF641-5B34-49E6-A5D0-2D65EB621212}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

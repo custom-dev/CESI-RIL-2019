@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "EssaiInterface": {
+      "commandName": "Project",
+      "commandLineArgs": "toto tata ook \"paramètre avec des espaces\""
+    }
+  }
+}

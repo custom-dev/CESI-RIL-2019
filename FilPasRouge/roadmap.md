@@ -2,7 +2,7 @@
 
 1. [Objectif](#Objectif)
 2. [Application console](#ApplicationConsole)
-2. tet
+3. [Opérations](#Operations)
 
 
 ### <a name="Objectif">Objectif</a>
@@ -27,7 +27,7 @@ Hello World !
 > FilPasRouge GoodBye
 Commande inconnue
 ```
-### Opérations Add/Sub/Mul/Div
+### <a name="Operations">Opérations</a> Add/Sub/Mul/Div
 Maintenant, on va ajouter 4 opérations :
 - Add
 - Sub
@@ -139,3 +139,87 @@ Ecrire des tests pour les différentes opérations.
 Faire les modifications nécessaires pour rendre les différents éléments du programme testable.
 
 Indication : il se pourrait que l'interface `IServiceProvider` et une surcharge adéquat de `ActivatorUtilities.CreateInstance` aide à la résolution du problème... Il faudrait peut être également importer un paquet Nuget...
+
+## VDM
+Aujourd'hui, notre intervenant nous a demandé d'extraire les dernières publication du site viedemerde.fr. VDM.
+
+L'objectif ici, va être multiple :
+- utiliser le gestionnaire de paquet NuGet pour installer HtmlUtilityPack
+- utiliser `WebClient` pour envoyer une requête et recevoir la réponse HTML du serveur
+- parser la réponse du serveur pour en extraire les informations utiles.
+- voir la sérialisation/désérialisation
+
+Les informations a récupérer par VDM sont les suivantes :
+- son contenu
+- son auteur
+- son titre
+- le nombre de "Je valide"
+- le nombre de "Tu l'as bien mérité".
+
+3 actions à faire :
+- "ShowVDM", qui affiche dans la console les VDM
+- "WriteVDM", qui enregistre dans un fichier les vies de merde
+- "ReadVDM", qui lit un fichier et affiche dans la console le contenu des VDM du fichier.
+
+## Calcul de hash
+
+Ajouter les actions suivantes :
+- calcul du MD5
+- calcul du SHA1
+- calcul du SHA256
+
+Afficher le hash en hexadécimal.
+
+Indice : voici des classes qui pourront vous aider :
+- System.Security.Cryptography.MD5
+- System.Security.Cryptography.SHA1
+- System.Security.Cryptography.SHA256
+
+
+## (Dé)cryptons
+Passons au chiffrement. Il existe deux grands types de chiffrement :
+- le chiffrement symmetrique
+- le chiffrement asymmetrique.
+
+Le chiffrement symmétrique est le plus utilisé.
+
+En réalité, même lorsque le chiffrement asymétrique est utilisé, du chiffrement symmétrique est utilisé (pour des raisons notamment de performances). Le chiffrement asymétrique sert à l'échange d'une clé symmétrique, et c'est ensuite cette clé symmétrique qui est utilisée pour chiffrer/déchiffrer les données.
+
+Commençons donc par du chiffrement symmetrique.
+
+Pour cela, nous allons mettre en place 3 nouvelles actions :
+- "GenKey" : pour générer une clé de chiffrement. La clé de chiffrement sera sauvegardé dans un fichier
+- "Encrypt" : chiffre un fichier. Prend en paramètre la clé de chiffrement, puis le fichier à chiffrer. Génère un fichier du même nom, suffixé par .encrypted qui est chiffré
+- "Decrypt" : déchiffre un fichier .encrypted. Génère un fichier du même nom, suffixé par .decrypted dont le contenu est déchiffré.
+
+## (Optionnel) (Dé)cryptions
+Pour les plus rapides, faire la même chose, mais avec un algorithme asymétrique.
+
+Pour se faire, 3 actions encore à générer :
+- "GenKeyRsa" : génère 2 clés de chiffrement, une publique, et une privée. Les deux seront stockée dans des fichiers à part. La clé publique sera dans un fichier .pub, la clé privé dans un fichier .key
+- "EncryptRsa" : Chiffre un fichier en utilisant la clé privée
+- "DecryptRsa" : Déchiffre un fichier en utilisant la clé publique. 
+
+## (Optionnale) Générer une signature
+A faire seulement si le chiffrement en utilisant un algorithme asymétrique a été fait.
+
+Que pourrait-on mettre en place pour mettre en place un système de signature d'un fichier ? Appelez moi quand vous avez une idée (avant de le mettre en place), puis une fois que c'est fait :)
+
+
+## Client / Serveur
+
+On va mettre en place un socket 
+Mise en place des évènements. Création, écoute, utilisation.
+
+
+Ajouter une commande "Serveur" et une autre "Client".
+
+La commande "Serveur" se met en attente de la connextion d'un client.
+
+Quand un client est connecté, le serveur peut recevoir des messages.
+
+Quand un message est reçu, il est transmis à l'ensemble des clients connectés.
+
+Le serveur peut également envoyer des messages à l'intégralité des clients.
+
+## Sérialisation / Désérialisation
