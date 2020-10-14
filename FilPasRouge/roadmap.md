@@ -161,6 +161,10 @@ Les informations a récupérer par VDM sont les suivantes :
 - "WriteVDM", qui enregistre dans un fichier les vies de merde
 - "ReadVDM", qui lit un fichier et affiche dans la console le contenu des VDM du fichier.
 
+
+A noter qu'il n'existe pas d'API pour accéder aux différentes VDM (en fait, elles n'existent plus ! En cherchant vous pouvez trouver des références, mais les API ne sont pas fonctionnelles).
+
+L'objctif est donc bien de récupérer le code HTML de la page principale et de le parser pour en extraire les informations.
 ## Calcul de hash
 
 Ajouter les actions suivantes :
