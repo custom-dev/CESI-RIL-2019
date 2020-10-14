@@ -189,7 +189,9 @@ Le chiffrement symmétrique est le plus utilisé.
 
 En réalité, même lorsque le chiffrement asymétrique est utilisé, du chiffrement symmétrique est utilisé (pour des raisons notamment de performances). Le chiffrement asymétrique sert à l'échange d'une clé symmétrique, et c'est ensuite cette clé symmétrique qui est utilisée pour chiffrer/déchiffrer les données.
 
-Commençons donc par du chiffrement symmetrique.
+Commençons donc par du chiffrement symmetrique. Il existe déjà des API toutes faites permettant de chiffrer/déchiffrer en utilisant un algorithme symétrique : AES.
+
+Vous pouvez vous référer à la documentation de Microsoft à ce sujet : [System.Security.Cryptography.Aes](https://docs.microsoft.com/fr-fr/dotnet/api/system.security.cryptography.aes?view=netcore-3.1)
 
 Pour cela, nous allons mettre en place 3 nouvelles actions :
 - "GenKey" : pour générer une clé de chiffrement. La clé de chiffrement sera sauvegardé dans un fichier
@@ -203,6 +205,9 @@ Pour se faire, 3 actions encore à générer :
 - "GenKeyRsa" : génère 2 clés de chiffrement, une publique, et une privée. Les deux seront stockée dans des fichiers à part. La clé publique sera dans un fichier .pub, la clé privé dans un fichier .key
 - "EncryptRsa" : Chiffre un fichier en utilisant la clé privée
 - "DecryptRsa" : Déchiffre un fichier en utilisant la clé publique. 
+
+L'algorithme asymétrique le plus utilisé est la Rsa.
+Vous pouvez vous référer à la documentation de Microsoft à ce sujet : [System.Security.Cryptography.RsaCryptoServiceProvider](https://docs.microsoft.com/fr-fr/dotnet/api/system.security.cryptography.rsacryptoserviceprovider?view=netcore-3.1)
 
 ## (Optionnale) Générer une signature
 A faire seulement si le chiffrement en utilisant un algorithme asymétrique a été fait.
