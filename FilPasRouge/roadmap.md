@@ -144,7 +144,7 @@ Indication : il se pourrait que l'interface `IServiceProvider` et une surcharge 
 Aujourd'hui, notre intervenant nous a demandé d'extraire les dernières publication du site viedemerde.fr. VDM.
 
 L'objectif ici, va être multiple :
-- utiliser le gestionnaire de paquet NuGet pour installer HtmlUtilityPack
+- utiliser le gestionnaire de paquet NuGet pour installer HtmlAgilityPack
 - utiliser `WebClient` pour envoyer une requête et recevoir la réponse HTML du serveur
 - parser la réponse du serveur pour en extraire les informations utiles.
 - voir la sérialisation/désérialisation
@@ -165,6 +165,10 @@ Les informations a récupérer par VDM sont les suivantes :
 A noter qu'il n'existe pas d'API pour accéder aux différentes VDM (en fait, elles n'existent plus ! En cherchant vous pouvez trouver des références, mais les API ne sont pas fonctionnelles).
 
 L'objctif est donc bien de récupérer le code HTML de la page principale et de le parser pour en extraire les informations.
+
+Lors de la récupération des informations depuis le site, vous pourrez constater un problème d'encodage (par exemple, au niveau des apostrophes). Il s'agit d'entité HTML qui sont interprétées par le navigateur pour un rendu correct. 
+
+Décodons les afin d'obtenir un contenu plus lisible. Il existe pour cela la méthode [HttpUtility.HtmlDecode](https://docs.microsoft.com/fr-fr/dotnet/api/system.web.httputility.htmldecode?view=netcore-3.1)
 ## Calcul de hash
 
 Ajouter les actions suivantes :
