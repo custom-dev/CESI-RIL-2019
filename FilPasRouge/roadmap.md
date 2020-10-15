@@ -101,7 +101,7 @@ Précédemment, nous avons utiliser une boucle pour vérifier si l'action exista
 Nous allons faire la même chose, mais avec une requête linq.
 
 ```csharp
-IAction action = availableActions.Where(x => x.Name == actionName);
+IAction action = availableActions.FirstOrDefault(x => x.Name == actionName);
 ```
 
 On peut également le faire avec une requête de type "SQL" :
