@@ -207,8 +207,8 @@ Pour les plus rapides, faire la même chose, mais avec un algorithme asymétriqu
 
 Pour se faire, 3 actions encore à générer :
 - "GenKeyRsa" : génère 2 clés de chiffrement, une publique, et une privée. Les deux seront stockée dans des fichiers à part. La clé publique sera dans un fichier .pub, la clé privé dans un fichier .key
-- "EncryptRsa" : Chiffre un fichier en utilisant la clé privée. La clé privée est lue depuis un fichier dont le nom est passé en premier paramètre, et le fichier à chiffrer est passé en second paramètre.
-- "DecryptRsa" : Déchiffre un fichier en utilisant la clé publique. Le clé publique est lue depuis un fichier dont le nom est passé en premier paramètre, et le fichier à déchiffrer est passé en second paramètre.
+- "EncryptRsa" : Chiffre un fichier en utilisant la clé publique. La clé publique est lue depuis un fichier dont le nom est passé en premier paramètre, et le fichier à chiffrer est passé en second paramètre.
+- "DecryptRsa" : Déchiffre un fichier en utilisant la clé privée. Le clé privée est lue depuis un fichier dont le nom est passé en premier paramètre, et le fichier à déchiffrer est passé en second paramètre.
 
 L'algorithme asymétrique le plus utilisé est la Rsa.
 Vous pouvez vous référer à la documentation de Microsoft à ce sujet : [System.Security.Cryptography.RsaCryptoServiceProvider](https://docs.microsoft.com/fr-fr/dotnet/api/system.security.cryptography.rsacryptoserviceprovider?view=netcore-3.1)
